@@ -12,7 +12,8 @@ const Datafetcher = () => {
   const [dataVar,setData] = useState([]);  
 
 const fetchdata = async() => {
-     const response=await fetch(URL);    const data=await response.json();
+     const response=await fetch(URL);   
+      const data=await response.json();
     console.log(data.items);
     setData(data.items);
 }
